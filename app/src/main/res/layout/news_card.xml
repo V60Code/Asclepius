@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginVertical="14dp"
+    android:layout_marginHorizontal="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            tools:ignore="UselessParent">
+
+            <ImageView
+                android:id="@+id/news_image"
+                android:layout_width="120dp"
+                android:layout_height="80dp"
+                android:layout_marginEnd="10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/empty"
+                android:contentDescription="@string/articles" />
+
+            <TextView
+                android:id="@+id/newsTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/titles"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:lines="3"
+                android:ellipsize="end"
+                android:paddingEnd="10dp"
+                android:gravity="center_vertical" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/newsDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="3"
+            android:ellipsize="end"
+            android:text="@string/description"
+            android:textSize="14sp"
+            android:paddingTop="6dp"
+            android:paddingHorizontal="10dp"
+            android:gravity="start" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
